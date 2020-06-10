@@ -4,8 +4,13 @@
 \alias{run_simulation}
 \title{Run simulations for a scenario}
 \usage{
-run_simulation(scenario, iterations = 10000L, ale_maximum = NULL,
-  verbose = FALSE, simulation_count = NULL)
+run_simulation(
+  scenario,
+  iterations = 10000L,
+  ale_maximum = NULL,
+  verbose = FALSE,
+  simulation_count = NULL
+)
 }
 \arguments{
 \item{scenario}{A \link{tidyrisk_scenario} object.}
@@ -27,5 +32,5 @@ OpenFAIR Monte Carlo simulation.
 }
 \examples{
 data(mc_quantitative_scenarios)
-run_simulation(mc_quantitative_scenarios[[1, "scenario"]], 10)
+run_simulation(mc_quantitative_scenarios$scenario[[1]], 10)
 }

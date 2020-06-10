@@ -31,15 +31,18 @@ the effective control strength for each threat event.
 }
 \examples{
 data(mc_quantitative_scenarios)
-params <- mc_quantitative_scenarios[[1, "scenario"]]$parameters
+params <- mc_quantitative_scenarios$scenario[[1]]$parameters
 openfair_tef_tc_diff_lm(params$tef, params$tc, params$diff, params$lm, 10)
 }
 \seealso{
-Other OpenFAIR helpers: \code{\link{compare_tef_vuln}},
-  \code{\link{get_mean_control_strength}},
-  \code{\link{sample_diff}}, \code{\link{sample_lef}},
-  \code{\link{sample_lm}}, \code{\link{sample_tc}},
-  \code{\link{sample_vuln}},
-  \code{\link{select_loss_opportunities}}
+Other OpenFAIR helpers: 
+\code{\link{compare_tef_vuln}()},
+\code{\link{get_mean_control_strength}()},
+\code{\link{sample_diff}()},
+\code{\link{sample_lef}()},
+\code{\link{sample_lm}()},
+\code{\link{sample_tc}()},
+\code{\link{sample_vuln}()},
+\code{\link{select_loss_opportunities}()}
 }
 \concept{OpenFAIR helpers}

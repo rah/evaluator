@@ -23,14 +23,15 @@ for a particular scenario.
 }
 \examples{
 data(mc_simulation_results)
-result <- mc_simulation_results[[1, "results"]]
+result <- mc_simulation_results$results[[1]]
 exposure_histogram(result)
 }
 \seealso{
-Other result graphs: \code{\link{generate_event_outcomes_plot}},
-  \code{\link{generate_heatmap}},
-  \code{\link{generate_scatterplot-deprecated}},
-  \code{\link{loss_exceedance_curve}},
-  \code{\link{loss_scatterplot}}
+Other result graphs: 
+\code{\link{generate_event_outcomes_plot}()},
+\code{\link{generate_heatmap}()},
+\code{\link{generate_scatterplot-deprecated}},
+\code{\link{loss_exceedance_curve}()},
+\code{\link{loss_scatterplot}()}
 }
 \concept{result graphs}
